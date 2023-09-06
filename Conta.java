@@ -28,4 +28,12 @@ public class Conta {
         this.saldo += valorDepositar;
         System.out.println("Saldo em sua conta : " + this.saldo);
     }
+    void transferirValor(double valorTransferir, Conta destino){
+       boolean retirou = this.sacarValor(valorTransferir);
+        if (retirou == false) {
+            System.out.println("Saldo Insuficiente. Impossível Transferir!");
+        }else{
+            destino.depositarValor(valorTransferir);
+        }
+    }
 }
