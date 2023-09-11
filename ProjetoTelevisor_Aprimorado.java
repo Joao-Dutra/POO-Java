@@ -2,7 +2,7 @@ package poo;
 
 import java.util.Scanner;
 
-public class ProjetoTeleviso_Aprimorado {
+public class ProjetoTelevisor_Aprimorado {
 
     public static void main(String[] args) {
 
