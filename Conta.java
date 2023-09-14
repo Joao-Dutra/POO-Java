@@ -5,17 +5,17 @@ public class Conta {
     // atributos
     
     int numero;
-    String titular;
+    Cliente titular;
     double saldo;
     
     // metodos
     
     void consultarSaldo(){
-        System.out.println("O saldo é " + this.saldo);
+        System.out.println("O saldo Ã© " + this.saldo);
     }
     boolean sacarValor(double valorSaque){            
         if (valorSaque > this.saldo) {
-            System.out.println("Não tem como sacar esse saldo.");
+            System.out.println("NÃ£o tem como sacar esse saldo.");
             return false;
         }
         else{
@@ -31,7 +31,7 @@ public class Conta {
     void transferirValor(double valorTransferir, Conta destino){
        boolean retirou = this.sacarValor(valorTransferir);
         if (retirou == false) {
-            System.out.println("Saldo Insuficiente. Impossível Transferir!");
+            System.out.println("Saldo Insuficiente. ImpossÃ­vel Transferir!");
         }else{
             destino.depositarValor(valorTransferir);
         }
