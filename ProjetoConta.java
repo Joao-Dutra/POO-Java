@@ -8,18 +8,29 @@ public class  ProjetoConta {
         
         
         Conta c1 = new Conta();
+        Cliente cliente1 = new Cliente();
         
-        c1.titular = "Giacomin";
+        c1.titular = cliente1;
         c1.numero = 1234;
-        c1.saldo = 1500;
+        c1.saldo = 1000;
+        
+        
+        
+        c1.titular.nome = "Maria";
+        System.out.println(c1.titular.nome);
+        cliente1.cpf = "555.222.111-20";
+        System.out.println(cliente1.cpf);
+        
+        
         
         Conta c2 = new Conta();
+        Cliente cliente2 = new Cliente();
         
-        c2.titular = "Zé";
+        c2.titular = cliente2;
         c2.numero = 4321;
         c2.saldo = 200;
         
-        System.out.println("A conta " + c1.numero + " é da(o) " + c1.titular + " e ela(o) tem " + c1.saldo + " de saldo em sua conta. ");
+        System.out.println("A conta " + c1.numero + " Ã© da(o) " + c1.titular + " e ela(o) tem " + c1.saldo + " de saldo em sua conta. ");
         
         
         c1.consultarSaldo();
