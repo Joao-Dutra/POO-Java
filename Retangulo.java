@@ -24,7 +24,7 @@ public class Retangulo {
     public void setAltura(int altura) {
         this.altura = altura;
         if (altura >= 1 && altura <= 20) {
-            this.base = base;
+            this.altura = altura;
         }else{
             System.out.println("Imposivel inserir esse valor como altura!");
         }
