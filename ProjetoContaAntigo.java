@@ -2,7 +2,7 @@ package poo;
 
 import java.util.Scanner;
 
-public class ProjetoConta {
+public class ProjetoContaAntigo {
 
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
