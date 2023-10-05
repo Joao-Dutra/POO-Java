@@ -1,5 +1,7 @@
 package poo.LISTA2;
 
+
+
 public class L2_2_Ponto2D {
 
     private double x;
@@ -69,18 +71,22 @@ public class L2_2_Ponto2D {
         return saida;
     }
     
-    public String distanciaPontos(L2_2_Ponto2D obj){
-        double distanciax = this.x - obj.getX();
-        double distanciay = this.y - obj.getY();
+    public double distanciaPontos(L2_2_Ponto2D obj){
         
-        String saida = "Distancia entre os pontos : " + distanciax + " e " + distanciay;
-        return saida;
+        double distancia , calcX , calcY;
+        
+        calcX = Math.pow(obj.getX() - this.x, 2);
+        calcY = Math.pow(obj.getY() - this.y, 2);
+        distancia = Math.sqrt(calcX + calcY);
+        
+        return distancia;
+        
     }
     
     public L2_2_Ponto2D clone( ){
         L2_2_Ponto2D novoponto = new L2_2_Ponto2D();
-        novoponto.setX(this.x);
-        novoponto.setY(this.y);
+        novoponto.setX(this.getX());
+        novoponto.setY(this.getY());
         return novoponto;
     }
 }
