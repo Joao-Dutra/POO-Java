@@ -1,92 +1,36 @@
 package poo.LISTA2;
 
-
-
-public class L2_2_Ponto2D {
-
-    private double x;
-    private double y;
-    
-    //construtores
-    public L2_2_Ponto2D(){
-        this.x = 0;
-        this.y = 0;
-    }
-    
-    public L2_2_Ponto2D(double x, double y){
-        this.x = x;
-        this.y = y;
-    }
-    
-    public L2_2_Ponto2D(L2_2_Ponto2D obj){
-        this.x = obj.getX();
-        this.y = obj.getY();
-    }
-    //getters and setters 
-    public double getX() {
-        return this.x;
-    }
-
-    public void setX(double x) {
-        this.x = x;
-    }
-
-    public double getY() {
-        return this.y;
-    }
-
-    public void setY(double y) {
-        this.y = y;
-    }
-    
-    //metodos da classe
-    
-    public void movimentacao(){
+public class L2_2 {
+    public static void main(String[] args) {
+        L2_2_Ponto2D p1 = new L2_2_Ponto2D();
         
-        this.x += 1;
-        this.y += 2.5;
-    }
-    
-    public void movimentacao(double x, double y){
+        L2_2_Ponto2D p2 = new L2_2_Ponto2D(5.0,12.0);
         
-        this.x += x;
-        this.y += y;
+        L2_2_Ponto2D p3 = new L2_2_Ponto2D(p1);
         
-    }
-    
-    public void movimentacao(L2_2_Ponto2D obj){
+        p1.movimentacao();
+        System.out.println(p1.toString());
+        p2.movimentacao(5, 13);
+        System.out.println(p2.toString());
+        p3.movimentacao(p2);
+        System.out.println(p3.toString());
+        p3.toString();  
         
-        this.x += obj.getX();
-        this.y += obj.getY();
+        if(p2.equals(p1)){
+            System.out.println("Sao iguais ");
+        }else{
+            System.out.println("Nao sao iguais");
+        }
         
-    }
-    
-    public boolean equals(L2_2_Ponto2D obj){
-                            
-        return (this.x == obj.getX() && this.y == obj.getY());
-    }
-    
-    public String toString(){
-        String saida = "X: " + this.x + " Y : " + this.y;
-        return saida;
-    }
-    
-    public double distanciaPontos(L2_2_Ponto2D obj){
+        System.out.println("A distancia entre os pontos eh " + p1.distanciaPontos(p2));
         
-        double distancia , calcX , calcY;
+        L2_2_Ponto2D p4 = p1.clone();
+        System.out.println(p4.toString());
         
-        calcX = Math.pow(obj.getX() - this.x, 2);
-        calcY = Math.pow(obj.getY() - this.y, 2);
-        distancia = Math.sqrt(calcX + calcY);
-        
-        return distancia;
-        
-    }
-    
-    public L2_2_Ponto2D clone( ){
-        L2_2_Ponto2D novoponto = new L2_2_Ponto2D();
-        novoponto.setX(this.getX());
-        novoponto.setY(this.getY());
-        return novoponto;
+        if(p1.equals(p4)){
+            System.out.println("Sao iguais ");
+        }else{
+            System.out.println("Nao sao iguais");
+        }
     }
 }
