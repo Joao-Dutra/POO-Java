@@ -1,13 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package funcionario;
 
-/**
- *
- * @author suelen
- */
 public class Principal {
 
     public static void main(String[] args) {
@@ -16,6 +8,7 @@ public class Principal {
         Gerente g = new Gerente(1234, "Joao", "0304", "Compras");
         Diretor d = new Diretor("Paula", "0706", 5678);
         Secretaria s = new Secretaria("Marta", "0943");
+        Cliente c = new Cliente("Saulo", 9988);
         
         ControleBonificacao cb = new ControleBonificacao();
 
@@ -41,11 +34,11 @@ public class Principal {
         cb.regitra(d);
         
         cb.regitra(s);
-
-       SistemaInterno si = new SistemaInterno();
-       si.login(g);
-          
        */
+       SistemaInterno si = new SistemaInterno();
+       si.login(c);
+          
+      
 
         
         // System.out.println("Total de bonificacao a ser paga pela empresa eh: "+cb.getTotalDeBonif());
