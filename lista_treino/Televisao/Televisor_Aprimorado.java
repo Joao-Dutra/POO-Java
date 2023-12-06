@@ -14,9 +14,9 @@ public class Televisor_Aprimorado {
         if (this.status == false) {
             this.canal = 1;
             this.volume = 0;           
-            System.out.println("O Televisor est· desligado! … necess·rio liga-lo para utiliza-lo, deseja liga-lo?");
+            System.out.println("O Televisor est√° desligado! √â necess√°rio liga-lo para utiliza-lo, deseja liga-lo?");
         }else{
-            System.out.println("O Televisor est· ligado! Informe um comando : ");
+            System.out.println("O Televisor est√° ligado! Informe um comando : ");
         }
     }
     
@@ -25,7 +25,7 @@ public class Televisor_Aprimorado {
            this.volume += 1; 
             System.out.println("Volume aumentado para : " + this.volume);
         }else{
-            System.out.println("Volume j· est· no m·ximo : " + this.volume);
+            System.out.println("Volume j√° est√° no m√°ximo : " + this.volume);
         }
     }
     
@@ -34,7 +34,7 @@ public class Televisor_Aprimorado {
           this.volume -= 1;
             System.out.println("Volume reduzido para : " + this.volume);
         }else{
-            System.out.println("Volume j· est· no mÌnimo : " + this.volume);
+            System.out.println("Volume j√° est√° no m√≠nimo : " + this.volume);
         }
     }
     
@@ -43,7 +43,7 @@ public class Televisor_Aprimorado {
         this.canal += 1;
             System.out.println("Canal ajustado para : " + this.canal);
         }else{
-            System.out.println("N„o tem mais como subir de canal!");
+            System.out.println("N√£o tem mais como subir de canal!");
         }
     }
     
@@ -52,7 +52,7 @@ public class Televisor_Aprimorado {
         this.canal -= 1;
             System.out.println("Canal ajustado para : " + this.canal);
         }else{
-            System.out.println("N„o tem mais como descer de canal!");
+            System.out.println("N√£o tem mais como descer de canal!");
         }
     }
     
@@ -78,6 +78,6 @@ public class Televisor_Aprimorado {
     }    
     
     void mostraStatus(){
-        System.out.println("Est· no canal : " + this.canal + " o volume est· em : " + this.volume + " e o televisor est· " + statusLigDes);
+        System.out.println("Est√° no canal : " + this.canal + " o volume est√° em : " + this.volume + " e o televisor est√° " + statusLigDes);
     }
 }
