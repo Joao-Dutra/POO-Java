@@ -19,12 +19,12 @@ public class Cliente {
         this.cpf = cpf;
     }
 
-    public String getEndereço() {
+    public String getEndereÃ§o() {
         return endereco;
     }
 
-    public void setEndereço(String endereço) {
-        this.endereco = endereço;
+    public void setEndereÃ§o(String endereÃ§o) {
+        this.endereco = endereÃ§o;
     }
 
     public String getFone() {
