@@ -19,7 +19,7 @@ public class L2_1 {
             comando = entrada.nextInt();
             break;
         case 2:
-            System.out.println("O valor atual é : " + c1.getValor());
+            System.out.println("O valor atual Ã© : " + c1.getValor());
             comando = entrada.nextInt();
             break;
         case 9:
