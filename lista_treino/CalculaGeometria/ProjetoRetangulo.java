@@ -9,6 +9,6 @@ public class ProjetoRetangulo {
          r.setBase(5);
          
          
-         System.out.println("O retangulo com base " + r.getBase() + " e com altura " + r.getAltura() + " tem o perímetro de " + r.calcularPerimetro() + " e área de " + r.calcularArea());
+         System.out.println("O retangulo com base " + r.getBase() + " e com altura " + r.getAltura() + " tem o perÃ­metro de " + r.calcularPerimetro() + " e Ã¡rea de " + r.calcularArea());
     }
 }
