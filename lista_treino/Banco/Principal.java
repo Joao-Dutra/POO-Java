@@ -16,7 +16,7 @@ public class Principal {
         
         
         do{
-        System.out.println("\n*** O que você deseja fazer: ***");
+        System.out.println("\n*** O que vocÃª deseja fazer: ***");
         System.out.println(" 1 : Depositar \n 2 : Sacar \n 3 : Transferencia \n 0 : Sair");
         operacao = entrada.nextInt();
         
@@ -48,7 +48,7 @@ public class Principal {
             break;
             
             case 0:
-                System.out.println("Você encerrou o programa!");
+                System.out.println("VocÃª encerrou o programa!");
             break;    
             
             default:
@@ -67,14 +67,14 @@ public class Principal {
         String nome = entrada.next();
         System.out.println("Informe o CPF: ");
         String cpf = entrada.next();
-        System.out.println("Informe o Endereço: ");
-        String endereço = entrada.next();
+        System.out.println("Informe o EndereÃ§o: ");
+        String endereÃ§o = entrada.next();
         System.out.println("Informe o Fone: ");
         String fone = entrada.next();
         
         cli.setNome(nome);
         cli.setCpf(cpf);
-        cli.setEndereço(endereço);
+        cli.setEndereÃ§o(endereÃ§o);
         cli.setFone(fone);
         
         return cli;
